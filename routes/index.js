@@ -3,13 +3,13 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Список юзеров', divClass: 'usersList' });
+  res.render('index', { title: 'Список юзеров', mainDisplay: 'display:block', display: 'display:none' });
 });
 router.get('/add', function(req, res, next) {
-  res.render('index', { title: 'Добавить юзера', divClass: 'add_userForm' });
+  res.render('index', { title: 'Добавить юзера', mainDisplay: 'display:none', display: 'display:block' });
 });
 router.get('/delete', function(req, res, next) {
-  res.render('index', { title: 'Удалить юзера', divClass: 'delete_userForm'});
+  res.render('index', { title: 'Удалить юзера', mainDisplay: 'display:none', display: 'display:block'});
 });
 
 module.exports = router;

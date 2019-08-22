@@ -1,15 +1,12 @@
 extends layout
 
 
+
 block content
-  - var fieldName = toggle
   h1 #{title}
-  div(class=divClass)
-  //div(style="display:block")
-  h2 #{add_delete}
-  input(type="text" placeholder="car" id="car")
-  input(type="text" placeholder="model" id="model")
-  button(type="submit" class="btn") Add to list!
+  div(style=""+mainDisplay)
+  div(style=""+display)
+    input(type="text" placeholder="name" id="name")
+    button(type="submit" class="btn") Click!
 
   script(src='./javascripts/main.js')
-//div(style=(display = "" + #{toggle})
