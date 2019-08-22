@@ -11,5 +11,11 @@ let usr = {users: [
 router.get('/users', function(req, res, next) {
   res.json(usr);
 });
+router.post('/add', function(req, res, next) {
+  res.json(usr);
+});
+router.post('/delete', function(req, res, next) {
+  res.json(usr);
+});
 
 module.exports = router;
