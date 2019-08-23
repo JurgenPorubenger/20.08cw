@@ -4,9 +4,10 @@ extends layout
 
 block content
   h1 #{title}
-  div(style=""+mainDisplay)
-  div(style=""+display)
+  div.main(style=""+mainDisplay)
+  div.form(style=""+display)
     input(type="text" placeholder="name" id="name")
-    button(type="submit" class="btn") Click!
+    button.btn(type="submit" style=""+btnDisplay) Click!
+    button.btn2(type="submit" style=""+btn2Display) Click!
 
   script(src='./javascripts/main.js')
